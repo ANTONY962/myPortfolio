@@ -1576,3 +1576,29 @@ footer{
     }
 
 }
+.hero {
+    padding-top: 100px;
+}
+
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+    .hero {
+        padding-top: 150px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .footer-content h2 {
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+
+}
+.navbar a {
+    font-weight: 600;
+   
+}
