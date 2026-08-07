@@ -1308,3 +1308,271 @@ footer{
     background:#2563eb;
 
 }
+/* ==========================================
+   MOBILE VIEW FIXES
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        min-height: 65px;
+        padding: 10px 15px;
+        gap: 8px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo span {
+        width: 36px;
+        height: 36px;
+        font-size: 17px;
+    }
+
+    .logo p {
+        font-size: 17px;
+    }
+
+    .navbar ul {
+        margin-top: 8px;
+        gap: 8px 14px;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        padding-top: 150px;
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+
+    .hello {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .summary {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        margin-top: 25px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 18px;
+    }
+
+
+    /* ---------- SCROLL INDICATOR ---------- */
+
+    .scroll-indicator {
+        margin-top: 25px;
+        padding-bottom: 35px;
+    }
+
+    .scroll-indicator i {
+        font-size: 18px;
+        margin: 6px;
+    }
+
+    .scroll-indicator p {
+        font-size: 11px;
+    }
+
+
+    /* ---------- SECTION SPACING ---------- */
+
+    section {
+        scroll-margin-top: 150px;
+    }
+
+    .about,
+    .experience,
+    .skills,
+    .projects,
+    .education,
+    .contact {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+
+    /* ---------- SECTION HEADINGS ---------- */
+
+    .section-header {
+        margin-bottom: 35px;
+    }
+
+    .section-header span {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-top: 8px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about {
+        gap: 35px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+        line-height: 1.25;
+        margin: 10px 0 18px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .about-card {
+        padding: 40px 25px;
+    }
+
+    .about-card i {
+        font-size: 65px;
+        margin-bottom: 18px;
+    }
+
+    .about-card h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+
+    /* ---------- EXPERIENCE ---------- */
+
+    .timeline {
+        margin-top: 30px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .timeline-content h3 {
+        font-size: 22px;
+    }
+
+    .timeline-content h4 {
+        font-size: 14px;
+    }
+
+    .timeline-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .timeline-tags span {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+
+    /* ---------- SKILLS ---------- */
+
+    .skills-grid {
+        margin-top: 35px;
+        gap: 18px;
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 25px 20px;
+    }
+
+    .skill-card i {
+        font-size: 45px;
+        margin-bottom: 18px;
+    }
+
+    .skill-card h3 {
+        font-size: 21px;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .projects-grid {
+        margin-top: 35px;
+        gap: 18px;
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 25px 20px;
+    }
+
+    .project-header h3 {
+        font-size: 21px;
+    }
+
+
+    /* ---------- EDUCATION ---------- */
+
+    .education-card {
+        padding: 25px 20px;
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 35px;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+    }
+
+}
