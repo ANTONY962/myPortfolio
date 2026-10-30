@@ -44,21 +44,18 @@
 
 </div> -->
 
-<ul>
+    <ul>
+        <li><a class="active" href="#">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
-<li><a class="active" href="#">About</a></li>
-
-<li><a href="#experience">Experience</a></li>
-
-<li><a href="#skills">Skills</a></li>
-
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#education">Education</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
+    <button class="menu-toggle" aria-label="Open menu">
+        ☰
+    </button>
 
 </nav>
 
@@ -88,10 +85,7 @@ Software Tester
 
 <p class="summary">
 
-Passionate Software Tester with experience in Manual Testing,
-API Testing, Database Testing, Performance Testing and Selenium
-Automation. I enjoy finding bugs, improving software quality,
-and delivering reliable applications.
+ISTQB-Certified Software Tester with experience in Manual Testing, API Testing, Database Testing, Performance Testing, and Selenium Automation. Passionate about identifying defects, improving software quality, and delivering reliable applications.
 
 </p>
 
@@ -476,16 +470,6 @@ Contact Me
 
             </div>
 
-            <a class="github-btn"
-               href="https://github.com/ANTONY962/BookSevaAutomation"
-               target="_blank">
-
-                <i class="fa-brands fa-github"></i>
-
-                View on GitHub
-
-            </a>
-
         </div>
 
     </div>
@@ -547,11 +531,11 @@ Contact Me
 
             <h3>Email</h3>
 
-            <p>yourmail@gmail.com</p>
+            <p>antonyvarghesem01@gmail.com</p>
 
         </div>
 
-        <div class="contact-card">
+    <!---    <div class="contact-card">
 
             <i class="fa-brands fa-github"></i>
 
@@ -563,7 +547,7 @@ Contact Me
 
             </a>
 
-        </div>
+        </div> -->
 
         <div class="contact-card">
 
@@ -571,9 +555,9 @@ Contact Me
 
             <h3>LinkedIn</h3>
 
-            <a href="#">
+            <a href="https://www.linkedin.com/in/antony-varghese-08115021b/">
 
-                Your LinkedIn Profile
+                <p style="color: white;">Antony Varghese</p>
 
             </a>
 
@@ -618,6 +602,21 @@ Contact Me
 </footer>
 
 <script src="script.js"></script>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.navbar ul');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu after clicking a link
+    document.querySelectorAll('.navbar ul a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+</script>
 
 </body>
 
